@@ -15,7 +15,7 @@ with open(VERSIONFILE, "r")as f:
     mo = pattern.search(verstrline)
 if mo:
     verstr = mo.group(1)
-    print("Version "+verstr)
+    print("Version " + verstr)
 else:
     raise RuntimeError("Unable to find version string in %s." % (VERSIONFILE,))
 
